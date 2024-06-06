@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Montserrat Light';
+    font-style: NORMAL;
+    src: url('/fonts/Montserrat-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat Regular';
+    font-style: NORMAL;
+    src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat Medium';
+    font-style: NORMAL;
+    src: url('/fonts/Montserrat-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'DelaGothicOne Regular';
+    font-style: NORMAL;
+    src: url('/fonts/DelaGothicOne-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CodaCaption ExtraBold';
+    font-style: NORMAL;
+    src: url('/fonts/CodaCaption-ExtraBold.ttf') format('truetype');
+}
+
+.font_family_Montserrat_Light {
+    font-family: 'Montserrat Light';
+}
+.font_family_Montserrat_Regular {
+    font-family: 'Montserrat Regular';
+}
+.font_family_Montserrat_Medium {
+    font-family: 'Montserrat Medium';
+}
+.font_family_DelaGothicOne_Regular {
+    font-family: 'DelaGothicOne Regular';
+}
+.font_family_CodaCaption_ExtraBold {
+    font-family: 'CodaCaption ExtraBold';
+}
+.text_shadow_black {
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.64);
+}
+.text_shadow_green {
+    text-shadow: 0px 4px 4px #88bd4b;
+}
+.text_shadow_3d {
+    text-shadow: 0px 6px 0px rgba(0, 0, 0, 0.64);
+}
+.box_shadow {
+    box-shadow: 0px 0px 10px #88bd4b;
+}

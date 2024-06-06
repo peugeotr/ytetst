@@ -1,0 +1,898 @@
+/*---------- Fonts Start ----------*/
+@font-face {
+    font-family: 'Liberation Sans Narrow';
+    font-style: NORMAL;
+    src: url('/fonts/LiberationSansNarrow-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: NORMAL;
+    src: url('/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MontserratSemi';
+    font-style: NORMAL;
+    src: url('/fonts/Montserrat-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    font-style: NORMAL;
+    src: url('/fonts/ofont.ru_Bebas Neue.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Monda';
+    font-style: NORMAL;
+    src: url('/fonts/Monda-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Annonce';
+    font-style: NORMAL;
+    src: url('/fonts/annoncew01_regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Dancing Script';
+    font-style: NORMAL;
+    src: url('/fonts/DancingScript-VariableFont_wght.ttf') format('truetype');
+}
+.font_family_Liberation {
+    font-family: 'Liberation Sans Narrow';
+}
+
+.font_family_Montserrat {
+    font-family: 'Montserrat';
+}
+
+.font_family_MontserratSemi {
+    font-family: 'MontserratSemi';
+}
+.font_family_Bebas {
+    font-family: 'Bebas Neue';
+}
+
+.font_family_Monda {
+    font-family: 'Monda';
+}
+.font_family_Annonce {
+    font-family: 'Annonce';
+}
+.font_family_Dancing_Script {
+    font-family: 'Dancing Script';
+}
+/*---------- Fonts End ----------*/
+/*---------- Color Start ----------*/
+.text_main {
+    color: white;
+}
+
+.text_etc {
+    color: #ee793e;
+}
+
+.border_etc {
+    border-color: #ee793e;
+}
+.gradientiridescent {
+    background-image: linear-gradient(
+        -225deg,
+        #ff0000 0%,
+        #ff7b00 29%,
+        #ff0000 60%,
+        #ff6600 88%,
+        #fbff00 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+}
+
+@keyframes textclip {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: 200% center;
+    }
+}
+/*---------- Color End ----------*/
+/*---------- Scroll Effect Start ----------*/
+.navscroll {
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: var(--space-4x);
+}
+.navscroll::-webkit-scrollbar {
+    display: none;
+}
+.navscrollstories {
+    scroll-snap-align: start;
+}
+/*---------- Scroll Effect End ----------*/
+/*---------- UserProfile Page Start ----------*/
+.gradient_black {
+    background: -webkit-linear-gradient(135deg, #161616 29%, rgb(31 41 55));
+    background: -moz-linear-gradient(135deg, #161616 29%, rgb(31 41 55));
+    background: linear-gradient(135deg, #161616 29%, rgb(31 41 55));
+}
+.user_profile_div {
+    z-index: 1;
+    overflow: hidden;
+    height: 100px;
+    overflow-y: hidden;
+    transition: height 0.5s linear;
+}
+.user_profile_div.active {
+    position: absolute;
+    background: #000000 !important;
+    z-index: 100;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+    transition: height 0.5s linear;
+}
+.table_statuses tr:first-child td {
+    font-weight: 700;
+    text-align: center;
+}
+.table_statuses tr:first-child td:first-child {
+    text-align: left;
+}
+.table_statuses tr td:nth-child(2),
+.table_statuses tr td:nth-child(3) {
+    text-align: center;
+}
+/*---------- UserProfile Page End ----------*/
+/*---------- NavSquare Page Start ----------*/
+.navsquarecatalog {
+    background: linear-gradient(115.53deg, #8d3c4a 5.91%, #c6f432 86.7%);
+}
+.navsquarefabrica {
+    background: linear-gradient(118.36deg, #96a453 0%, #c09ff8 97.16%);
+}
+.navsquarerasschet {
+    background: linear-gradient(114.64deg, #fff490 9.18%, #d7c100 74.76%);
+}
+.navsquaregarantues {
+    background: linear-gradient(119.38deg, #00d491 4.81%, #fec4dd 90.07%);
+}
+.navsquarepayments {
+    background: linear-gradient(114.22deg, #0a7ba5 14.5%, #002367 96.02%);
+}
+.navsquaregdekypit {
+    background: linear-gradient(116.02deg, #ff6b3c 13.54%, #b8153c 100%);
+}
+/*---------- NavSquare Page End ----------*/
+/*---------- NavCircle Page Start ----------*/
+.circle {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.gold_bolder {
+    --borderWidth: 4px;
+    position: relative;
+    box-shadow: 0 0 0 2px #000000;
+    background-color: transparent;
+}
+/* починить армянско цыганское кругляшку!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.gold_bolder:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    border-radius: 50px;
+    z-index: -1;
+    background: linear-gradient(
+        60deg,
+        #ff0000 0%,
+        #ff7b00 29%,
+        #ff0000 60%,
+        #ff6600 88%,
+        #fbff00 100%
+    );
+
+    animation: animatedgradient 2s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.actual {
+    background-image: url(/images/navcircle/actual.png);
+}
+.stocks {
+    background-image: url(/images/navcircle/stocks.png);
+}
+.reviews {
+    background-image: url(/images/navcircle/reviews.png);
+}
+
+.command {
+    background-image: url(/images/navcircle/command.png);
+}
+
+.about {
+    background-image: url(/images/navcircle/about.png);
+}
+
+.deadlines {
+    background-image: url(/images/navcircle/deadlines.png);
+}
+/*---------- NavCircle Page End ----------*/
+/*---------- Referal Page ----------*/
+.gradien_424240 {
+    background: -webkit-linear-gradient(135deg, #32322ec2 15%, #2a2a2abe);
+    background: -moz-linear-gradient(135deg, #32322ec2 15%, #2a2a2abe);
+    background: linear-gradient(135deg, #32322ec2 15%, #2a2a2abe);
+}
+.gradien_424241 {
+    background: -webkit-linear-gradient(135deg, #646449c2 15%, #6a4242be);
+    background: -moz-linear-gradient(135deg, #646449c2 15%, #6a4242be);
+    background: linear-gradient(135deg, #646449c2 15%, #6a4242be);
+}
+.referaltextpoints {
+    background-image: linear-gradient(
+        -225deg,
+        #ff0000 0%,
+        #ff7b00 29%,
+        #ff0000 60%,
+        #ff6600 88%,
+        #fbff00 100%
+    );
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+@keyframes textclip {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: 200% center;
+    }
+}
+.referalstylestrelka {
+    background-image: url(/images/referal/strelka.png);
+    background-repeat: no-repeat;
+    background-size: 70px;
+    height: 80px;
+    width: 80px;
+}
+/*---------- Referal Page End ----------*/
+/*---------- Catalog Page Start ----------*/
+.kyhnya {
+    background-image: url(/images/catalog/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shkafkype {
+    background-image: url(/images/catalog/2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gostinnaya {
+    background-image: url(/images/catalog/3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.myagkayamebel {
+    background-image: url(/images/catalog/4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.officemebel {
+    background-image: url(/images/catalog/5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.garderob {
+    background-image: url(/images/catalog/6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bitovaya {
+    background-image: url(/images/catalog/7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.stolovie {
+    background-image: url(/images/catalog/8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.boxshadow {
+    position: relative;
+}
+.boxshadow::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    z-index: -1;
+    height: 100%;
+    width: calc(100% - 22px);
+    transform: scale(1) translateZ(0);
+    filter: blur(5px);
+    background: linear-gradient(
+        to left,
+        #ff5770,
+        #e4428d,
+        #c42da8,
+        #9e16c3,
+        #6501de,
+        #9e16c3,
+        #c42da8,
+        #e4428d,
+        #ff5770
+    );
+    background-size: 200% 200%;
+    animation: animateGlow 4s linear infinite;
+}
+
+@keyframes animateGlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+/*---------- Catalog Page End ----------*/
+/*---------- About Fabrica Page Start ----------*/
+.gradien_ff9237 {
+    background: radial-gradient(
+        96.23% 2279.22% at 1.37% 46.67%,
+        #ff9237 0%,
+        #ffbe7e 100%
+    );
+}
+/*---------- About Fabrica Page End ----------*/
+/*---------- Calculation Page Start ----------*/
+.kyhnyaa {
+    background-image: url(/images/calculation/kyhnya1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.shkaf {
+    background-image: url(/images/calculation/shkaf1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.other {
+    background-image: url(/images/calculation/other1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*---------- Calculation Page End ----------*/
+/*---------- TypeKitchen Page Start ----------*/
+.pryamaya {
+    background-image: url(/images/typekitchen/prymaya2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.yglovaya {
+    background-image: url(/images/typekitchen/yglovaya2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pobraznaya {
+    background-image: url(/images/typekitchen/pobraznaya2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sostrovkom {
+    background-image: url(/images/typekitchen/sostrovkom2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*---------- TypeKitchen Page End ----------*/
+/*---------- TableTop Page Start ----------*/
+.dsp {
+    background-image: url(/images/tabletop/dsp.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.kamen {
+    background-image: url(/images/tabletop/kamen.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.kvarc {
+    background-image: url(/images/tabletop/kvarc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*---------- TableTop Page End ----------*/
+/*---------- TypeTechnique Page Start ----------*/
+.typetechnique {
+    background-image: url(/images/typeconnection/opros.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: absolute !important;
+    z-index: -1;
+}
+
+/*---------- TypeTechnique Page End ----------*/
+/*---------- Slider Start ----------*/
+.slide {
+    position: absolute;
+    display: grid;
+    padding: 00px 0;
+    overflow: hidden;
+}
+
+.slide:after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+    width: 40%;
+    height: 2px;
+    border-radius: 10px;
+}
+
+.slide-items {
+    position: relative;
+    grid-area: 1/1;
+    overflow: hidden;
+}
+
+.slide-items img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.slide-nav {
+    grid-area: 1/1;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.slide-items > * {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.slide-items > .active {
+    position: relative;
+    opacity: 1;
+    poiter-events: initial;
+}
+
+.slide-nav button {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+}
+
+.slide-thumb {
+    display: flex;
+    grid-column: 1/3;
+    margin-bottom: 10px;
+    justify-content: center;
+    position: relative;
+    left: 7%;
+    width: 86%;
+    background-color: #00000023;
+    border-radius: 50px;
+}
+
+.slide-thumb > span {
+    flex: 1;
+    display: block;
+    height: 4px;
+    background: #fff;
+    margin: 3px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.slide-thumb > span.done:after {
+    content: '';
+    display: block;
+    height: inherit;
+    background: #ee793e;
+    border-radius: 3px;
+}
+
+.slide-thumb > span.active::after {
+    content: '';
+    display: block;
+    height: inherit;
+    background: #ee793e;
+    border-radius: 3px;
+    transform: translateX(-100%);
+    animation: thumb var(--var-dur, 5s) forwards linear;
+}
+
+@keyframes thumb {
+    to {
+        transform: initial;
+    }
+}
+
+video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.video-wrapper {
+    border: 2px solid #000;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*---------- Slider End ----------*/
+/*---------- MyBalls Page Start ----------*/
+.boxshadowballs {
+    position: relative;
+}
+.boxshadowballs::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    z-index: -1;
+    height: 100%;
+    width: calc(100% - 22px);
+    transform: scale(1) translateZ(0);
+    filter: blur(5px);
+    background: linear-gradient(
+        to left,
+        #ff5770c3,
+        #e4428ecb,
+        #c42da8c7,
+        #9e16c3c8,
+        #6501dec6,
+        #9e16c3ca,
+        #c42da8cc,
+        #e4428ed1,
+        #ff5770ca
+    );
+    background-size: 200% 200%;
+    animation: animateGlow 4s linear infinite;
+}
+
+@keyframes animateGlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+/*---------- MyBalls Page End ----------*/
+/*---------- Progress Bar Opros --*/
+#msform {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+/*inputs*/
+#msform input,
+#msform textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2c3e50;
+    font-size: 13px;
+}
+/*buttons*/
+#msform .action-button {
+    width: 100px;
+    background: #27ae60;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+#msform .action-button:hover,
+#msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #27ae60;
+}
+/*headings*/
+.fs-title {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+.fs-subtitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+/*progressbar*/
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+}
+#progressbar li {
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 16.66%;
+    float: left;
+    position: relative;
+}
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 20px;
+    line-height: 20px;
+    display: block;
+    font-size: 10px;
+    color: #333;
+    background: white;
+    border-radius: 3px;
+    margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: -46%;
+    top: 9px;
+    z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none;
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #ee793e;
+    color: white;
+}
+
+/*///////////////////////////*/
+.vertical {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    font-size: 11px;
+    background: #e23737;
+    color: #fff;
+}
+
+.user_profile_backround {
+    background: linear-gradient(
+        to left,
+        #c6f432,
+        #c3ff00,
+        #6aff00,
+        #6aff00,
+        #c3ff00,
+        #c6f432
+    );
+    background-size: 200% 200%;
+    animation: animateGlow 8s linear infinite;
+}
+
+@keyframes animateGlow {
+    0% {
+        background-position: 200% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/**/
+
+input[type='checkbox'] {
+    display: none;
+}
+
+input:checked ~ label {
+    right: 0;
+}
+
+label {
+    z-index: 2;
+    position: absolute;
+    right: calc(-100% + 95px);
+    width: 100%;
+    -moz-transition: right 0.5s ease;
+    transition: right 0.5s ease;
+}
+
+.text_profile {
+    background: linear-gradient(
+        180deg,
+        #ffffff 31.82%,
+        rgba(0, 0, 0, 0) 170.45%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.box {
+    box-shadow: -5px -5px 9px #c6f432, 5px 5px 9px #c6f432;
+}
+
+.text_years {
+    background: linear-gradient(180deg, #ff2800 31.82%, #ffffff81 76.47%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.znakomstva1 {
+    background: linear-gradient(45deg, #c6f432 30.7%, #c09ff8 100%);
+}
+.znakomstva2 {
+    background: linear-gradient(315deg, #c6f432 30.7%, #c09ff8 100%);
+}
+.znakomstva3 {
+    background: linear-gradient(45deg, #c6f432 30.7%, #c09ff8 100%);
+}
+
+.body-card {
+    width: 100vw;
+    height: 100vh;
+    @apply flex place-content-center
+}
+
+.card{
+    height: auto;
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.06);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    position: relative;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 8px;
+    -webkit-box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
+            box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
+    font-family: 'Poppins',sans-serif;
+    box-shadow: #88bd4b79 0px 5px 15px;
+}
+.card-img{
+    height: 120px;
+    width: 120px;
+    background-color: #88BD4B;
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    border-radius: 50%;
+    position: relative;
+    margin: 1.25rem auto 0 auto;
+    left: 0;
+    right: 0;
+
+}
+.card-img img{
+    height: 86%;
+    border-radius: 50%;
+    margin-left: 7%;
+    margin-top: 7%;
+}
+h6{
+    margin: 0;
+}
+.desc{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.primary-text{
+    color: #d5d5d5;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+}
+.secondary-text{
+    color: #c0c0c0;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
+.button{
+    background-color: rgba(255, 255, 255, 0.06);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    border: none;
+    margin: 1.25rem 1rem 0 1rem;
+}
+.details{
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    height: 70px;
+    padding: 5px 0;
+    -ms-grid-columns: auto auto;
+    grid-template-columns: 50% 50%;
+    background-color: rgba(0, 0, 0, 0.301);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    position: relative;
+    bottom: 0;
+    border-radius: 0 0 8px 8px;
+    margin: 1.25rem 0 0 0;
+}
+.details>div{
+    text-align: center;
+}
+.details>div:first-child{
+    border-right: 2px solid rgba(255,255,255,0.08);
+}

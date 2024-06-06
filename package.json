@@ -1,0 +1,59 @@
+{
+    "name": "frontend",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev -p 80",
+        "build": "next build",
+        "start": "next start -p 80",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.11.1",
+        "@emotion/styled": "^11.11.0",
+        "@nextui-org/react": "^2.1.13",
+        "@pbe/react-yandex-maps": "^1.2.5",
+        "axios": "^1.5.1",
+        "canvas": "^2.11.2",
+        "dayjs": "^1.11.10",
+        "effector": "^22.8.7",
+        "effector-react": "^22.5.4",
+        "framer-motion": "^10.16.4",
+        "jquery": "^3.7.1",
+        "lodash": "^4.17.21",
+        "moment": "^2.29.4",
+        "next": "^14.2.3",
+        "qrcode": "^1.5.3",
+        "react": "18.2.0",
+        "react-calendar": "^4.6.0",
+        "react-clock": "^4.5.0",
+        "react-date-picker": "^10.5.1",
+        "react-datetime-picker": "^5.5.2",
+        "react-dom": "18.2.0",
+        "react-router-dom": "^6.16.0",
+        "react-time-picker": "^6.5.1"
+    },
+    "devDependencies": {
+        "@next/bundle-analyzer": "^13.0.2",
+        "@types/jquery": "^3.5.23",
+        "@types/node": "18.11.3",
+        "@types/react": "18.0.21",
+        "@types/react-dom": "18.0.6",
+        "autoprefixer": "^10.4.12",
+        "eslint": "8.26.0",
+        "eslint-config-next": "13.0.2",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-config-universe": "^11.2.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-tailwindcss": "^3.7.0",
+        "husky": "^8.0.1",
+        "lint-staged": "^13.0.3",
+        "postcss": "^8.4.18",
+        "prettier": "2.8.8",
+        "tailwindcss": "^3.2.1"
+    },
+    "lint-staged": {
+        "**/*.(ts|tsx)": "bash -c 'pnpm tsc --noEmit'",
+        "**/*.(ts|tsx|js)": "eslint --fix"
+    }
+}
